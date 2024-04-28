@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadvinM</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
+    <link rel="stylesheet" href="styles/timeline.css">
+    <link rel="stylesheet" href="styles/social.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="icon" href="images/logo_full.png" type="image/png"> <!--favicon-->
+
+    <link href="https://api.fontshare.com/v2/css?f[]=nippo@500,700,400&display=swap" rel="stylesheet">
+
+  </head>
+<body>
+    <header>
+        <ul class="header_container">
+            <div class="logo"><img src="images/logo.png" alt="RadvinM's Logo"></div>
+            <ul class="header">
+                <a href="#hero"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#portfolio"><li>Portfolio</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </ul>
+    </header>
+
+    <main>
+        <section id="hero" class="container">
+            <ul> 
+                <li>
+                    <h1>RadvinM</h1>
+                    <p><i>Well...</i> I came this far...</p>
+                </li>
+                <img src="images/im_dead.png" alt="Me">
+            </ul>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About ME</h2>
+            <p> Oh hey! I am RadvinM, he/him to clarify. I <b>love</b> developing, fell in love with it when I was 9, and now <i>I cant let go.</i>
+                so lets just roll with it. <br><br> so lets know <i>ME</i> a bit (not my portfolio, thats another section). <br>
+            </p>
+
+            <ul class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown(this);">💜My fav songs💜</button>
+                <li class="dropdown-content">
+                  <ul>
+                    <li>⭐ Isle of flightless birds - twenty one pilots </li>
+                    <li>⭐ Stressed out - twenty one pilots </li>
+                    <li>⭐ Angry too - lola blanc </li>
+                    <li>⭐ .... I'll list later</li>
+                  </ul>
+                </li>
+            </ul>
+
+            <ul class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown(this);">💜My fav youtubers💜</button>
+                <li class="dropdown-content">
+                  <ul>
+                    <li>⭐ Laurenzside</li>
+                  </ul>
+                </li>
+            </ul>
+
+            <ul class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown(this);">💜I love...💜</button>
+                <li class="dropdown-content">
+                  <ul>
+                    <li>⭐ Horror</li>
+                    <li>⭐ Gore</li>
+                    <li>⭐ Creepy stuff</li>
+                    <li>⭐ Cute stuff</li>
+                    <li>⭐ Cute BUT Creepy</li>
+                    <li>⭐ STALKING PEOPLE TILL DEATH (not srsly...)</li>
+                    <li>⭐ Gamedev</li>
+                    <li>⭐ Story telling</li>
+                    <li>⭐ Creating content</li>
+                  </ul>
+                </li>
+            </ul>
+
+            <p>
+                <br><br>so! now you know <i>ME</i> a <b>bit</b> more!
+                <br><br>
+            </p>
+
+        </section>
+
+        <!-- <section id="portfolio" class="container">
+            <h2>Portfolio</h2>
+            <p>This is my experiance</p>
+        </section> -->
+          
+        <section id="portfolio" class="container">
+          <h2>Portfolio</h2>
+            <section class="timeline">
+                <ul>
+                  <li>
+                    <div>
+                      <time>2020</time> I started using scratch, I remember it was a summer, that I decided to re-watch hotel transylvania and start using scratch.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2020</time> Started learning html/css/javascript, used a wacky tutorial and made weird websites 
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2021</time> OH GOD, python!, and AI. This is intresting, I learnt python in <i style="color: var(--text-color);">3 days</i>, 
+                      <br>day 1: started with a networkchuck video.
+                      <br>day 2: Im reading googles AI library documentation.
+                      <br>day 3: made a handtracking AI module.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2022</time> Got into AI a lot more, started reading the orgins of AI, and how it actually works. 
+                      Thanks "sentdex" for the amazing book "neural networks from scratch in python"
+                      <br> Ofcourse I got to the chineese room thing, and kinda gave up on everything
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2022</time> STARTED UNREAL! parallel to AI and even exceeting AI through the year!
+                      <br> following weird af tutorials to learn UNREAL!
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2022</time> started to lose intrest in AI
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> GOT INTO UNREAL EVEN MORE! <br> made my first EVER project without following any tutorials <br> and then the second project came in the same manner
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> started the making of "When Pigs Fly", a story based game made in unreal.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> I never had any teachers teach me computer or any development languages, that have actually teached me something.
+                      <br>BUT! this one guy at 7th grade, his job was a university professor, he teached computer science.
+                      Well, I had one year of class with him, he gave me the motivation to keep going. It was a REALLY fun class, we worked on image proccessing and AI.
+                      <br> I miss those times
+                      <br> so we made something to improve on mcculloch & pitts heat/cold cognitive network
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> OH GOD, the deadline to the project with that teacher is near...
+                      <br> AND the model was done happily, made some scrap projects in scratch also
+                      <br> now we just needed an implementation of the model in <i style="color: var(--text-color);">some</i> language/software...
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> UNITY!!
+                      <br>well that project with that teacher, I decided "a 2D project? unity is good for that!" but I didnt know ANY C#/C++/C NEITHER Unity
+                      <br>again "well its good for the project!?"
+                      <br>From one afternoon to late night till 3am, I stayed up, learnt unity to a good point, also learnt C# to a good point to make a project representing an AI model
+                      , without any tutorials!
+                      <br>It was both enough to publish the app, AND to make an appgame later!
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> After that project was done, month later I made an appgame called flapyy, You guessed it! a flappy bird copy. In Unity,
+                      again without tutorials! I guess staying up till 3am to learn an engine and a language actually had profit for me!
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> Kept writting and making the game "When Pigs Fly" through out all those events
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> Very unrelaited but you'll see the connection!
+                      <br> I made a minecraft server to play with my friend!
+                      <br> its an 18 year old computer (as of 2023), but still.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> Well that server, I setted up docker, Jellyfin (movie streaming service maker pretty much), guacamole (pretty much anydesk), on the server
+                      <br> now I made some python scripts for sending me my public IP, and the new DNS host redirector.
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> Got a little into internet security, cuz of the server that was now running 24/7 in my house.
+                      <br> it took a dark turn, with tools like loic and hoic later. Started ip-grabbing to prank people lol. and now noone trusts me :(
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2023</time> I dont want to reveal anything about the story of "When Pigs Fly", so...
+                      <br> Kept writting and making the game "When Pigs Fly"
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <time>2024</time> Kept writting and making the game "When Pigs Fly"
+                    </div>
+                  </li>
+                  <h2>Here we are now!</h2>
+                </ul>
+              </section>
+        </section>        
+        
+
+        <section id="contact">
+            <section>
+              <h2>Contact Me</h2>
+              <p>Wanna reach out? <br> lets talk!</p>
+            </section>
+
+          
+            
+            <div class="social_container">
+              <section class="form-container">
+                <form action="https://formcarry.com/s/rhVxtNum2JN" method="POST" enctype="multipart/form-data">
+                  
+                  <div class="form-block">
+                    <label for="fc-generated-1-name">Full Name</label>
+                    <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
+                  </div>
+                  
+                  <div class="form-block">
+                    <label for="fc-generated-1-email">Your Email Address</label>
+                    <input type="email" name="email" id="fc-generated-1-email" placeholder="cool-af-person@gmail.com" />
+                  </div>
+                  
+                  <div class="form-block">
+                    <label for="fc-generated-1-message">Your message</label>
+                    <textarea name="message" name="message" id="fc-generated-1-message" placeholder="Your lovely message (hopefully)..."></textarea>
+                  </div>
+                  
+                  <div class="form-block">  
+                    <button type="submit">Send</button>
+                  </div>
+                
+                </form>
+              </section>
+
+              <div>
+                <section class="form-container">
+                  <!-- form spree -->
+                  <form action="https://formspree.io/f/xrgnyvwa" method="POST">
+                    <div class="form-block">
+                      <label>
+                        Your email:
+                        <input type="email" name="email">
+                      </label>
+                    </div>
+                    <div class="form-block">
+                      <label>
+                        Your message:
+                        <textarea name="message"></textarea>
+                      </label>
+                    </div>
+                    <div class="form-block">
+                      <!-- your other form fields go here -->
+                      <button type="submit">Send</button>
+                    </div>
+                  </form>
+                </section>
+              </div>
+  
+              <ul class="social">
+                <li>
+                  <a href="">
+                    <img src="images/social/reddit.svg" alt="reddit">
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="">
+                    <img src="images/social/facebook.svg" alt="">
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="">
+                    <img src="images/social/instagram.svg" alt="">
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="">
+                    <img src="images/social/discord.svg" alt="">
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="">
+                    <img src="images/social/twitter.svg" alt="">
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="">
+                    <img src="images/social/whatsapp.svg" alt="">
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="">
+                    <img src="images/social/github.svg" alt="">
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="">
+                    <img src="images/social/youtube.svg" alt="">
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="">
+                    <img src="images/social/snapchat.svg" alt="">
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="">
+                    <img src="images/social/pintrest.svg" alt="">
+                  </a>
+                </li>
+  
+                <li>
+                  <a href="">
+                    <img src="images/social/linkdin.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 RadvinM. All rights reserved.</p>
+    </footer>
+
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/timeline.js"></script>
+</body>
+</html>

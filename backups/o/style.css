@@ -1,0 +1,222 @@
+/* Root variables */
+:root {
+    --background-color: #0f0f0f;
+    --background-color-second: #333;
+    --text-color: #fff;
+    --accent-color: #ff1d65;
+    --accent-color-second: #9122b2;
+    --accent-color-third: #0a288d;
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Container styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Logo styles */
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999; /* Ensure the logo is above other content */
+}
+
+.logo img {
+    width: 80px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Header styles */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.8);
+    color: var(--text-color);
+    padding: 30px 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow the list items to wrap into multiple lines */
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    background-color: var(--background-color-second);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    box-shadow: -1px 3px 0px var(--accent-color);
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+    padding: 10px 25px;
+    box-shadow: 1px 3px 10px var(--accent-color); /*inset 0 0px 5px var(--accent-color)*/
+}
+
+/* Add margin between list items when they wrap onto the second line */
+nav ul li:nth-child(n) {
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 200px 20px !important;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 400px;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 30px;
+    box-shadow: var(--accent-color) 10px 10px 1px;
+}
+
+.hero .text {
+    text-align: left;
+    padding: 0 20px;
+    margin-right: 20px;
+    width: calc(100% - 470px);
+    font-size: 30px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    /* box-shadow: var(--text-color) 0px 10px 0px; */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%; /* Adjust container width to fit smaller screens */
+        padding: 0 20px; /* Add padding to the sides for better readability */
+    }
+
+    .hero {
+        padding: 100px 20px !important; /* Adjust hero section padding for smaller screens */
+    }
+
+    .hero img {
+        width: 100px; /* Adjust image size for smaller screens */
+        margin-left: 0; /* Remove left margin to center the image */
+        margin-bottom: 20px; /* Add bottom margin for better spacing */
+        border-radius: 10px;
+    }
+
+    .hero .text {
+        width: 100%; /* Set text width to full for smaller screens */
+        margin-right: 0; /* Remove right margin for full width */
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .logo img {
+        width: 60px; /* Adjust logo size for smaller screens */
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+/* For screens smaller than 1024px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 0 40px; /* Adjust container padding for better spacing */
+    }
+}
+
+/* For screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 60px; /* Adjust container padding for better spacing */
+    }
+}
+
+
+
+
+/* About section styles */
+/* #about {
+    padding-top: 100px;
+} */
+
+/* Portfolio section styles */
+/* #portfolio {
+    padding: 100px;
+} */
+
+/* .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+/* Contact section styles */
+/* #contact {
+    background-color: var(--background-color-second);
+    color: var(--text-color);
+    padding: 50px 0;
+    text-align: center;
+} */
+
+/* Footer styles */
+/* footer {
+    background-color: var(--background-color-second);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+} */
+
+/* footer p {
+    margin: 0;
+} */

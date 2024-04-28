@@ -1,0 +1,208 @@
+/* Root variables */
+:root {
+    --background-color: #0f0f0f;
+    --background-color-second: #333;
+    --text-color: #fff;
+    --accent-color: #ff1d65;
+    --accent-color-second: #9122b2;
+    --accent-color-third: #0a288d;
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Logo styles */
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999; /* Ensure the logo is above other content */
+}
+
+.logo img {
+    width: 80px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.8); /* Example background color with some transparency */
+    color: var(--text-color);
+    padding: 40px 0;
+    z-index: 999; /* Ensure the header is above the logo */
+}
+
+nav {
+    border-radius: 10px; /* Adding border radius to the nav element */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    background-color: var(--background-color-second);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Add padding to the anchor elements */
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    box-shadow: -1px 3px 0px var(--accent-color);
+}
+
+nav ul li a:hover {
+    color: var(--accent-color); /* Change text color on hover */
+    padding: 10px 25px;
+    box-shadow: 1px 3px 10px var(--accent-color); /*inset 0 0px 5px var(--accent-color)*/
+}
+
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 200px 20px !important; /* Adjusted top padding */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 400px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 50px; /* Adjusted margin to move the image more to the right */
+    border-radius: 30px;
+    box-shadow: var(--accent-color) 10px 10px 1px;
+}
+
+.hero .text {
+    text-align: left; /* Align text to the left */
+    padding: 0 20px; /* Adjusted padding */
+    margin-right: 20px; /* Adjusted margin to match other sections */
+    width: calc(100% - 470px); /* Adjusted width */
+    font-size: 30px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    box-shadow: var(--text-color) 0px 10px 0px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+
+
+/* Container styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* About section styles */
+#about {
+    padding-top: 100px;
+}
+
+/* Portfolio section styles */
+#portfolio {
+    padding: 100px;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: var(--background-color-second);
+    color: var(--text-color);
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--background-color-second);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .hero {
+        padding: 80px 20px; /* Adjusted padding */
+    }
+
+    .hero h1 {
+        font-size: 1.5em; /* Adjusted font size */
+    }
+
+    .hero p {
+        font-size: 0.9em; /* Adjusted font size */
+    }
+
+    .container {
+        padding: 10px; /* Adjusted padding */
+    }
+
+    #about,
+    #portfolio,
+    #contact {
+        padding: 60px 20px; /* Adjusted padding */
+    }
+
+    .portfolio-items {
+        justify-content: center;
+    }
+    
+    /* Header styles for smaller screens */
+    header {
+        padding: 10px 0; /* Adjusted padding */
+    }
+
+    nav {
+        padding: 0 10px; /* Adjusted padding */
+    }
+
+}

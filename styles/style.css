@@ -1,0 +1,251 @@
+/* Root variables */
+:root {
+    --background-color: #0f0f0f;
+    --background-color-second: #222; /*#333*/
+    --text-color: #fff;
+    --text-color-second: #B3B8D0;
+    --accent-color: #ff1d65;
+    --accent-color-second: #9122b2;
+    --accent-color-third: #0a288d;
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Nippo', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+i {
+    color: var(--accent-color-second);
+}
+
+b {
+    color: var(--accent-color);
+}
+
+/* Container styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* load logo */
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+/* Header */
+
+.header {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header li{
+    background-color: var(--background-color-second);
+    padding: 10px 20px;
+    margin: 10px 5px;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    box-shadow: -1px 3px 0px var(--accent-color), inset rgba(0,0,0, 0.5) 0 5px 15px;
+}
+
+.header li:hover{
+    color: var(--accent-color);
+    padding: 10px 25px;
+    box-shadow: 1px 3px 10px var(--accent-color), inset rgba(0,0,0, 0.8) 0 5px 10px; /*inset 0 0px 5px var(--accent-color)*/
+}
+
+.header a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Header container */
+.header_container {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: fixed;
+    background-color: rgba(0,0,0, 0.8);
+    width: 100%;
+    padding: 10px 0 10px 0;
+    margin: 0;
+
+    z-index: 99999;
+}
+
+
+
+/* Hero */
+
+#hero {
+    padding-top: 150px;
+}
+
+#hero ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#hero img {
+    width: 450px;
+    border-radius: 50px;
+    box-shadow: rgba(0,0,0, 0.5) 10px 10px 10px,
+                var(--accent-color) 10px 10px 1px,
+                rgba(0,0,0, 0.8) -10px 10px 10px,
+                rgba(0,0,0, 0.8) 20px 20px 10px;
+}
+
+#hero h1 {
+    font-size: 50px;
+    color: var(--accent-color);
+}
+
+#hero p {
+    font-size: 20px;
+}
+
+#hero li {
+    margin: 0 auto 0 0;
+}
+
+
+/* About */
+#about {
+    padding-top: 150px;
+}
+#about h2 {
+    text-align: center;
+    font-size: 60px !important;
+}
+
+/* Portfolio */
+#portfolio {
+    padding-top: 150px;
+    max-width: 1024px !important;
+    padding-bottom: 100px;
+
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-size: 60px !important;
+}
+
+
+
+/* Contact section styles */
+#contact {
+    background-color: var(--background-color-second);
+    color: var(--text-color);
+    padding: 50px 0;
+    text-align: center;
+    font-size: 25px !important;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--background-color-second);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0 20px 0 0;
+    text-align: right;
+}
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 767px) {
+    .fade-in {
+        opacity: 100;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .header li{
+        padding: 10px 10px;
+        margin: 10px 5px;
+    }
+
+    #hero {
+        padding-top: 200px;
+    }
+
+    
+    #hero ul {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #hero li {
+        margin: 0 0 20px 0;
+    }
+
+    #hero img {
+        width: 250px;
+        margin-left: 0;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    #portfolio {
+        max-width: 100% !important;
+        padding: 0 !important;
+        padding-bottom: 100px !important;
+    }
+
+    footer p {
+        text-align: center;
+    }
+}
+
+/* For screens smaller than 1024px (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+/* For screens larger than 1024px (e.g., desktops) */
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 60px;
+    }
+}

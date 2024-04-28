@@ -1,0 +1,72 @@
+/* Hide the dropdown content by default */
+.dropdown-content {
+    border-radius: 0px 0px 30px 30px;
+
+    display: none;
+    padding: 10px;
+    background-color: var(--background-color-second);
+
+    box-shadow: rgba(0,0,0, 0.8) 0px 10px 10px, inset rgba(0,0,0, 0.5) 0px 5px 15px;
+}
+  
+.dropdown {
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Style the button */
+.dropbtn {
+    border-radius: 30px;
+
+    box-shadow: rgba(0,0,0, 0.8) 0px 10px 10px, inset rgba(0,0,0, 0.5) 0px 5px 15px; /*inset var(--accent-color) 0px 5px 15px, inset var(--accent-color) 0px -5px 15px; */
+
+    transition: all 0.5s ease;
+    
+    background-color: var(--background-color-second);
+    color: var(--text-color);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add rounded-top class for adjusting border radius */
+.dropbtn.rounded-top {
+    border-radius: 30px 30px 0 0; /* Adjusted border radius */
+}
+
+/* On hover, add a darker background color */
+.dropbtn:hover, .dropbtn.rounded-top {
+    background-color: var(--accent-color);
+    box-shadow: rgba(0,0,0, 0.8) 0px 10px 10px, inset rgba(0,0,0, 0.5) 0px 5px 15px, 
+                var(--accent-color) 0px 5px 15px, var(--accent-color) 0px -5px 15px;
+}
+
+/* Show the dropdown content when the button is clicked */
+.show {
+    display: block;
+}
+
+/* Hide the dropdown content by default */
+.dropdown-content ul li {
+    opacity: 0;
+    list-style: none;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    display: block; 
+    animation: fadeIn 1s ease forwards;
+}
