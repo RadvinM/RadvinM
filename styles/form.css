@@ -55,6 +55,7 @@
 .form-container textarea{
   min-height: 188px;
   max-width: 100%;
+  width: 100%;
   padding-top: 12px;
 }
 
@@ -68,6 +69,7 @@
 .form-container textarea:hover,
 .form-container select:hover {
   border: 1px solid var(--accent-color);
+  /* box-shadow: var(--accent-color) 0px 0px 10px 5px; */
   background-color: var(--background-color-second);
 }
 
@@ -81,9 +83,10 @@
 .form-container textarea:focus,
 .form-container select:focus {
   background-color: var(--background-color-second);
+  box-shadow: var(--accent-color) 0px 0px 10px 5px;
   border: 1px solid var(--accent-color);
   color: var(--text-color-second);
-  box-shadow: var(--accent-color);
+  /* box-shadow: var(--accent-color); */
   outline: none;
 }
 
