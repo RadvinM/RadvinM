@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+
+            <div class="contact-left-title">
+                <h2>Get in touch!</h2>
+                <hr>
+            </div>
+
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="ac547a03-2ab8-4ac0-82c6-4deae2ad983f">
+        
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="cool-af-person@gmail.com" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your lovely message (hopefully)..." class="contact-inputs" required></textarea>
+        
+            <!-- hCaptcha Spam Protection -->
+            <div class="h-captcha" data-captcha="true" class="contact-inputs"></div>
+        
+            <button type="submit" class="contact-inputs">Submit Form</button>
+        
+        </form>
+    </div>
+    <!-- Required for hCaptcha -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>

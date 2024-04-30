@@ -236,26 +236,35 @@
           
             
             <div class="social_container">
+              
               <section class="form-container">
-                <form action="https://formcarry.com/s/rhVxtNum2JN" method="POST" enctype="multipart/form-data">
+                <form action="https://api.web3forms.com/submit" method="POST">
                   
+                  <!-- Replace with your Access Key -->
+                  <input type="hidden" name="access_key" value="ac547a03-2ab8-4ac0-82c6-4deae2ad983f">
+
                   <div class="form-block">
-                    <label for="fc-generated-1-name">Full Name</label>
-                    <input type="text" name="name" id="fc-generated-1-name" placeholder="Your first and last name" />
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Your name" required>
                   </div>
                   
                   <div class="form-block">
-                    <label for="fc-generated-1-email">Your Email Address</label>
-                    <input type="email" name="email" id="fc-generated-1-email" placeholder="cool-af-person@gmail.com" />
+                    <label>Your Email Address</label>
+                    <input type="email" name="email" placeholder="cool-af-person@gmail.com" required>
                   </div>
                   
                   <div class="form-block">
-                    <label for="fc-generated-1-message">Your message</label>
-                    <textarea name="message" name="message" id="fc-generated-1-message" placeholder="Your lovely message (hopefully)..."></textarea>
+                    <label>Your message</label>
+                    <textarea name="message" placeholder="Your lovely message (hopefully)..." required></textarea>
+                  </div>
+                  
+                  <div class="form-block">
+                    <!-- hCaptcha Spam Protection -->
+                    <div class="h-captcha" data-captcha="true" class="contact-inputs"></div>
                   </div>
                   
                   <div class="form-block">  
-                    <button type="submit">Send</button>
+                    <button type="submit" class="contact-inputs">Submit Form</button>
                   </div>
                 
                 </form>
@@ -355,6 +364,8 @@
         <p>&copy; 2024 RadvinM. All rights reserved.</p>
     </footer>
 
+    <!-- Required for hCaptcha -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
     <script src="scripts/script.js"></script>
     <script src="scripts/timeline.js"></script>
