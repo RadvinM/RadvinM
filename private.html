@@ -2,14 +2,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Private</title>
+    <title>Contact Form</title>
 
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/style.css">
-
+    <link rel="stylesheet" href="styles/social.css">
 </head>
 <body>
-    <section id="hero" class="container">
-        <h1 style="display: block; margin-left: auto; margin-right: auto; width: 50%;">Private stuff, to get permission use the contact form</h1>
+    <h1 style="text-align: center;">These pages are private, to access please contact me</h1>
+    <div class="social_container">
+    <section class="form-container" style="max-width: 400px; text-align: center;">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            
+            <!-- Replace with your Access Key -->
+            <input type="hidden" name="access_key" value="ac547a03-2ab8-4ac0-82c6-4deae2ad983f">
+
+            <div class="form-block">
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Your name" required>
+            </div>
+            
+            <div class="form-block">
+            <label>Your Email Address</label>
+            <input type="email" name="email" placeholder="cool-af-person@gmail.com" required>
+            </div>
+            
+            <div class="form-block">
+            <label>Your message</label>
+            <textarea name="message" placeholder="Your lovely message (hopefully)..." required></textarea>
+            </div>
+            
+            <div class="form-block">
+            <!-- hCaptcha Spam Protection -->
+            <div class="h-captcha" 
+                    data-captcha="true" 
+                    data-theme="dark"
+                    data-error-callback="onError"
+                    class="contact-inputs"
+            ></div>
+            </div>
+            
+            <div class="form-block">  
+                <button type="submit" class="contact-inputs">Submit Form</button>
+            </div>
+        
+        </form>
     </section>
+    </div>
+    <!-- Required for hCaptcha -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
