@@ -90,7 +90,7 @@
                 <br><br>
             </p>
 
-            <a href="https://radvinm.itch.io">
+            <a href="https://radvinm.itch.io" style="color: var(--accent-color);">
               <h2 style="font-size: 40px !important;">Itch.io</h2>
               <!-- <img src="images/social/itchio.svg" alt="itch.io" style="display: block; margin-left: auto; margin-right: auto; width: 20%;"> -->
             </a>
@@ -371,6 +371,14 @@
 
     <!-- Required for hCaptcha -->
     <script src="https://web3forms.com/client/script.js" async defer></script>
+
+    <!--  -->
+    <script>
+      window.onload = function() {
+          // Reset the form fields when the page loads
+          document.getElementById("form").reset();
+      };
+    </script>
 
     <script src="scripts/script.js"></script>
     <script src="scripts/timeline.js"></script>
